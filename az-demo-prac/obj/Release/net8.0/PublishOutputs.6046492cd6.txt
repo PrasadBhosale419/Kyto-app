@@ -1,0 +1,7 @@
+C:\Users\HP\OneDrive\Documents\az-demo-prac\az-demo-prac\obj\Release\net8.0\PubTmp\Out\az-demo-prac.exe
+C:\Users\HP\OneDrive\Documents\az-demo-prac\az-demo-prac\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HP\OneDrive\Documents\az-demo-prac\az-demo-prac\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\HP\OneDrive\Documents\az-demo-prac\az-demo-prac\obj\Release\net8.0\PubTmp\Out\az-demo-prac.dll
+C:\Users\HP\OneDrive\Documents\az-demo-prac\az-demo-prac\obj\Release\net8.0\PubTmp\Out\az-demo-prac.deps.json
+C:\Users\HP\OneDrive\Documents\az-demo-prac\az-demo-prac\obj\Release\net8.0\PubTmp\Out\az-demo-prac.runtimeconfig.json
+C:\Users\HP\OneDrive\Documents\az-demo-prac\az-demo-prac\obj\Release\net8.0\PubTmp\Out\az-demo-prac.pdb
