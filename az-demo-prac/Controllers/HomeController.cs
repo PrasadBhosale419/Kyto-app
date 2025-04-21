@@ -16,12 +16,12 @@ namespace az_demo_prac.Controllers
             dbContext = _dbContext;
         }
 
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-        public async Task<IActionResult> Index() 
+        public async Task<IActionResult> GetUsers() 
         {
             var users =  await dbContext.Users.ToListAsync();
             return View(users);

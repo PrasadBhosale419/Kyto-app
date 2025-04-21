@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Kyto | Welcome";
+    ViewBag.Title = "Kyto | Sign Up";
     Layout = null;
 }
 
@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kyto | Sign In</title>
+    <title>Kyto | Sign Up</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -20,7 +20,7 @@
         }
 
         .overlay {
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -96,12 +96,22 @@
 <body>
     <div class="overlay">
         <div class="auth-container">
-            <h1>Welcome to Kyto</h1>
-            <p>Sign in to continue managing your services.</p>
+            <h1>Create an Account</h1>
+            <p>Sign up to start managing your services.</p>
 
-            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            @using (Html.BeginForm("RegisterUser", "Account", FormMethod.Post))
             {
                 @Html.AntiForgeryToken()
+                <div class="form-group">
+                    <label for="name">Firstname</label>
+                    <input type="text" id="name" name="FirstName" placeholder="Enter your Firstname" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Lastname</label>
+                    <input type="text" id="name" name="Lastname" placeholder="Enter your Lastname" required />
+                </div>
+
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="Email" placeholder="Enter your email" required />
@@ -109,12 +119,17 @@
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="Password" placeholder="Enter your password" required />
+                    <input type="password" id="password" name="Password" placeholder="Create a password" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="ConfirmPassword" placeholder="Confirm your password" required />
                 </div>
 
                 <div class="auth-buttons">
-                    <button type="submit">Sign In</button>
-                    <a href="@Url.Action("GetRegisterPage", "Account")">Don't have an account? Sign Up</a>
+                    <button type="submit">Sign Up</button>
+                    <a href="@Url.Action("GetLoginPage", "Account")">Already have an account? Sign In</a>
                 </div>
             }
         </div>

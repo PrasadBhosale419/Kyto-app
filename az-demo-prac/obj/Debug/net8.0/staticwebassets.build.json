@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j7t8KiNXD4jk9P29SaoJmKN+/RW0YHSlmjmnEuZa+84=",
+  "Hash": "oHTAcI6lAIJl5L7ZL9Ws21Fj3uSg54FDSgd0BJSSdRs=",
   "Source": "az-demo-prac",
   "BasePath": "_content/az-demo-prac",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\kyto-bg.jpg",
+      "SourceId": "az-demo-prac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\",
+      "BasePath": "_content/az-demo-prac",
+      "RelativePath": "images/kyto-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "07nzsbx3kf",
+      "Integrity": "LNi3MWOjrXlBfOVXFl+0BohYSBjorFQOw58EWtOVi+s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\kyto-bg.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\js\\site.js",
@@ -1645,6 +1666,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/kyto-bg.07nzsbx3kf.jpg",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\kyto-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356592"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LNi3MWOjrXlBfOVXFl+0BohYSBjorFQOw58EWtOVi+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:19:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "07nzsbx3kf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kyto-bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LNi3MWOjrXlBfOVXFl+0BohYSBjorFQOw58EWtOVi+s="
+        }
+      ]
+    },
+    {
+      "Route": "images/kyto-bg.jpg",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\kyto-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356592"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LNi3MWOjrXlBfOVXFl+0BohYSBjorFQOw58EWtOVi+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:19:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LNi3MWOjrXlBfOVXFl+0BohYSBjorFQOw58EWtOVi+s="
         }
       ]
     },
