@@ -54,5 +54,12 @@ namespace az_demo_prac.Controllers
             return View(vendors);
         }
 
+        [HttpGet("GetVendorsByDiscipline/{TaskDiscipline}")]
+        public async Task<IActionResult> GetVendorsByDiscipline(Discipline TaskDiscipline)
+        {
+            var vendorsByDiscipline = await dbContext.Vendors.Where(x=>x.TaskDiscipline == TaskDiscipline).ToListAsync();
+            return View(vendorsByDiscipline);
+        }
+
     }
 }

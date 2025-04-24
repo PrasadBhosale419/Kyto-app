@@ -183,30 +183,48 @@
             <div class="big-feature">
                 <h3>Explore Service Providers</h3>
                 <div class="service-grid">
-                    <div class="service-tile">
-                        <img width="48" height="48" src="https://img.icons8.com/stickers/48/housekeeping.png" alt="housekeeping" />   
-                        <h4>Cleaning</h4>
-                    </div>
-                    <div class="service-tile">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/maintenance.png" alt="maintenance" />
-                        <h4>Repairing</h4>
-                    </div>
-                    <div class="service-tile">
-                        <img width="48" height="48" src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/48/external-grooming-pets-and-birds-inipagistudio-lineal-color-inipagistudio.png" alt="groom" />
-                        <h4>Grooming</h4>
-                    </div>
-                    <div class="service-tile">
-                        <img width="48" height="48" src="https://img.icons8.com/plasticine/48/car--v1.png" alt="car--v1" />
-                        <h4>Tours</h4>
-                    </div>
-                    <div class="service-tile">
-                        <img width="48" height="48" src="https://img.icons8.com/emoji/48/cooking-pot-emoji.png" alt="cooking-pot-emoji" />
-                        <h4>Cooking</h4>
-                    </div>
-                    <div class="service-tile">
-                        <img width="48" height="48" src="https://img.icons8.com/color/48/teaching.png" alt="teaching" />
-                        <h4>Teaching</h4>
-                    </div>
+                    <form asp-controller="Dashboard" asp-action="GetVendorsByDiscipline" asp-route-TaskDiscipline="Cleaning" method="get" style="all: unset;">
+                        <button type="submit" class="service-tile" style="cursor: pointer;">
+                            <img width="48" height="48" src="https://img.icons8.com/stickers/48/housekeeping.png" alt="housekeeping" />
+                            <h4>Cleaning</h4>
+                        </button>
+                    </form>
+
+                    <form asp-controller="Dashboard" asp-action="GetVendorsByDiscipline" asp-route-TaskDiscipline="Repairing" method="get" style="all: unset;">
+                        <button type="submit" class="service-tile" style="cursor: pointer;">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/maintenance.png" alt="maintenance" />
+                            <h4>Repairing</h4>
+                        </button>
+                    </form>
+
+                    <form asp-controller="Dashboard" asp-action="GetVendorsByDiscipline" asp-route-TaskDiscipline="Grooming" method="get" style="all: unset;">
+                        <button type="submit" class="service-tile" style="cursor: pointer;">
+                            <img width="48" height="48" src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/48/external-grooming-pets-and-birds-inipagistudio-lineal-color-inipagistudio.png" alt="groom" />
+                            <h4>Grooming</h4>
+                        </button>
+                    </form>
+
+                    <form asp-controller="Dashboard" asp-action="GetVendorsByDiscipline" asp-route-TaskDiscipline="Tours" method="get" style="all: unset;">
+                        <button type="submit" class="service-tile" style="cursor: pointer;">
+                            <img width="48" height="48" src="https://img.icons8.com/plasticine/48/car--v1.png" alt="car--v1" />
+                            <h4>Tours</h4>
+                        </button>
+                    </form>
+
+                    <form asp-controller="Dashboard" asp-action="GetVendorsByDiscipline" asp-route-TaskDiscipline="Cooking" method="get" style="all: unset;">
+                        <button type="submit" class="service-tile" style="cursor: pointer;">
+                            <img width="48" height="48" src="https://img.icons8.com/emoji/48/cooking-pot-emoji.png" alt="cooking-pot-emoji" />
+                            <h4>Cooking</h4>
+                        </button>
+                    </form>
+
+                    <form asp-controller="Dashboard" asp-action="GetVendorsByDiscipline" asp-route-TaskDiscipline="Teaching" method="get" style="all: unset;">
+                        <button type="submit" class="service-tile" style="cursor: pointer;">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/teaching.png" alt="teaching" />
+                            <h4>Teaching</h4>
+                        </button>
+                    </form>
+
                 </div>
             </div>
         </div>

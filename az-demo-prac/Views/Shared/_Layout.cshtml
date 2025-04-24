@@ -130,6 +130,10 @@
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
+                                    <a class="dropdown-item" asp-controller="Account" asp-action="AddMoney">Add money to wallet</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
                                     <form asp-controller="Account" asp-action="Logout" method="post" class="dropdown-item p-0">
                                         @Html.AntiForgeryToken()
                                         <button type="submit" class="btn btn-link dropdown-item">

@@ -6,6 +6,8 @@
 
         public string Name { get; set; }
 
+        public Discipline TaskDiscipline { get; set; }
+
         public string Description { get; set; }
 
         public int UserId { get; set; }
@@ -17,5 +19,16 @@
         public string City { get; set; }
 
         public string Country { get; set; }
+    }
+
+    public enum Discipline
+    {
+        None = 0,
+        Cleaning,
+        Repairing,
+        Grooming,
+        Tours,
+        Cooking,
+        Teaching
     }
 }
