@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oHTAcI6lAIJl5L7ZL9Ws21Fj3uSg54FDSgd0BJSSdRs=",
+  "Hash": "8I0tbwjkqECdPTQEgKWt9YVWyDn7v0/MHaoiB+55neo=",
   "Source": "az-demo-prac",
   "BasePath": "_content/az-demo-prac",
   "Mode": "Default",
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\kyto-bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\spend-bg.jpg",
+      "SourceId": "az-demo-prac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\",
+      "BasePath": "_content/az-demo-prac",
+      "RelativePath": "images/spend-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "do0hrrkues",
+      "Integrity": "rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\spend-bg.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\js\\site.js",
@@ -1748,6 +1769,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-LNi3MWOjrXlBfOVXFl+0BohYSBjorFQOw58EWtOVi+s="
+        }
+      ]
+    },
+    {
+      "Route": "images/spend-bg.do0hrrkues.jpg",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\spend-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "774383"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 17:15:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "do0hrrkues"
+        },
+        {
+          "Name": "label",
+          "Value": "images/spend-bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE="
+        }
+      ]
+    },
+    {
+      "Route": "images/spend-bg.jpg",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\spend-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "774383"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 17:15:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE="
         }
       ]
     },

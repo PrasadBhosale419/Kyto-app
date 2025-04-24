@@ -48,6 +48,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LNi3MWOjrXlBfOVXFl\u002B0BohYSBjorFQOw58EWtOVi\u002Bs="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"356592"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022LNi3MWOjrXlBfOVXFl\u002B0BohYSBjorFQOw58EWtOVi\u002Bs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 20:19:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/az-demo-prac/images/spend-bg.do0hrrkues.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\spend-bg.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"do0hrrkues"},{"Name":"integrity","Value":"sha256-rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE="},{"Name":"label","Value":"_content/az-demo-prac/images/spend-bg.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"774383"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 17:15:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/az-demo-prac/images/spend-bg.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\spend-bg.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"774383"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022rSSmU/jxCzNU9Hc8oj/Ip75wGeENc/MHF9cjtuzA7xE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 17:15:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/az-demo-prac/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
