@@ -7,40 +7,63 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 <style>
+    :root {
+        --kyto-primary: #00b6b3;
+        --kyto-dark: #1a2b49;
+        --kyto-light-bg: #f9fafa;
+        --kyto-gray: #e0e0e0;
+    }
+
     body {
-        background-color: #f9fafa;
+        background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('/images/spend-bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
         font-family: 'Segoe UI', sans-serif;
     }
 
     h3 {
-        color: #0d1b2a;
+        color: var(--kyto-dark);
         font-weight: bold;
         margin-bottom: 20px;
     }
 
     .form-container {
         background-color: white;
-        padding: 25px;
+        padding: 30px;
         border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--kyto-gray);
+        margin-top: 30px;
     }
 
     label {
         font-weight: 500;
-        color: #0d1b2a;
+        color: var(--kyto-dark);
     }
 
     .form-control {
         border-radius: 8px;
         border: 1px solid #d0d7de;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .btn-primary, .btn-cancel {
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        width: 48%;
     }
 
     .btn-primary {
-        background-color: #00bfa6;
-        border-color: #00bfa6;
-        border-radius: 8px;
-        padding: 10px 18px;
-        font-weight: 600;
+        background-color: var(--kyto-primary);
+        border-color: var(--kyto-primary);
+        color: white;
     }
 
         .btn-primary:hover {
@@ -48,81 +71,129 @@
             border-color: #009e8a;
         }
 
+    .btn-cancel {
+        background-color: #e0e0e0;
+        border-color: #d0d7de;
+        color: var(--kyto-dark);
+    }
+
+        .btn-cancel:hover {
+            background-color: #c0c0c0;
+            border-color: #b0b0b0;
+        }
+
+        .btn-primary i, .btn-cancel i {
+            margin-right: 8px;
+        }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group input {
+            width: 100%;
+        }
+
+    .row .col-md-6 {
+        margin-bottom: 20px;
+    }
+
     .broom-icon {
         position: absolute;
         bottom: 10px;
         right: 10px;
         font-size: 22px;
-        color: #00bfa6;
+        color: var(--kyto-primary);
+        cursor: pointer;
+    }
+
+        .broom-icon:hover {
+            color: var(--kyto-dark);
+        }
+
+    .text-danger {
+        font-size: 0.875rem;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 </style>
 
 <div class="container mt-4 position-relative">
     <h3><i class="fa-solid fa-broom"></i> Add your task</h3>
     <hr />
-    <div class="row">
-        <div class="col-md-6 form-container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 form-container">
             <form asp-action="AddTask">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                <div class="form-group mb-3">
-                    <label asp-for="taskName">Task</label>
-                    <input asp-for="taskName" class="form-control" />
-                    <span asp-validation-for="taskName" class="text-danger"></span>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label asp-for="taskName">Task</label>
+                        <input asp-for="taskName" class="form-control" />
+                        <span asp-validation-for="taskName" class="text-danger">Task is required</span>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label asp-for="userId">User ID</label>
+                        <input asp-for="userId" class="form-control" />
+                        <span asp-validation-for="userId" class="text-danger">UserId is required</span>
+                    </div>
                 </div>
 
-                <div class="form-group mb-3">
-                    <label asp-for="userId">User ID</label>
-                    <input asp-for="userId" class="form-control" />
-                    <span asp-validation-for="userId" class="text-danger"></span>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label asp-for="taskDetails">Task Details</label>
+                        <input asp-for="taskDetails" class="form-control" />
+                        <span asp-validation-for="taskDetails" class="text-danger">Task details are required</span>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label asp-for="flatNo">Flat No./Floor/Wing</label>
+                        <input asp-for="flatNo" class="form-control" />
+                        <span asp-validation-for="flatNo" class="text-danger">Flat No. is required</span>
+                    </div>
                 </div>
 
-                <div class="form-group mb-3">
-                    <label asp-for="taskDetails">Task Details</label>
-                    <input asp-for="taskDetails" class="form-control" />
-                    <span asp-validation-for="taskDetails" class="text-danger"></span>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label asp-for="addressline1">Address Line 1</label>
+                        <input asp-for="addressline1" class="form-control" />
+                        <span asp-validation-for="addressline1" class="text-danger">Addressline 1 is required</span>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label asp-for="addressline2">Address Line 2</label>
+                        <input asp-for="addressline2" class="form-control" />
+                        <span asp-validation-for="addressline2" class="text-danger">Addressline 2 is required</span>
+                    </div>
                 </div>
 
-                <div class="form-group mb-3">
-                    <label asp-for="flatNo">Flat No./Floor/Wing</label>
-                    <input asp-for="flatNo" class="form-control" />
-                    <span asp-validation-for="flatNo" class="text-danger"></span>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label asp-for="state">State</label>
+                        <input asp-for="state" class="form-control" />
+                        <span asp-validation-for="state" class="text-danger">State is required</span>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label asp-for="country">Country</label>
+                        <input asp-for="country" class="form-control" />
+                        <span asp-validation-for="country" class="text-danger">Country is required</span>
+                    </div>
                 </div>
 
-                <div class="form-group mb-3">
-                    <label asp-for="addressline1">Address Line 1</label>
-                    <input asp-for="addressline1" class="form-control" />
-                    <span asp-validation-for="addressline1" class="text-danger"></span>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label asp-for="addressline2">Address Line 2</label>
-                    <input asp-for="addressline2" class="form-control" />
-                    <span asp-validation-for="addressline2" class="text-danger"></span>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label asp-for="state">State</label>
-                    <input asp-for="state" class="form-control" />
-                    <span asp-validation-for="state" class="text-danger"></span>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label asp-for="country">Country</label>
-                    <input asp-for="country" class="form-control" />
-                    <span asp-validation-for="country" class="text-danger"></span>
-                </div>
-
-                <div class="form-group mt-4">
+                <div class="form-group d-flex justify-content-between">
                     <button type="submit" class="btn btn-primary">
                         <i class="fa-solid fa-plus"></i> Create
                     </button>
+                    <a asp-controller="Dashboard" asp-action="ReturnDashboard" class="btn btn-cancel">
+                        <i class="fa-solid fa-xmark"></i> Cancel
+                    </a>
                 </div>
             </form>
         </div>
-    </div>
-
-    <div class="broom-icon">
-        <i class="fa-solid fa-broom"></i>
     </div>
 </div>

@@ -7,32 +7,95 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/az_demo_prac.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        html, body {
-            height: 100%;
+        :root {
+            --kyto-primary: #00b6b3;
+            --kyto-dark: #1a2b49;
+            --kyto-accent: #fdbd2d;
+            --kyto-light-bg: #f8fafa;
+            --kyto-gray: #e0e0e0;
         }
 
+        /* Body and global layout */
         body {
+            background-color: var(--kyto-light-bg);
+            color: var(--kyto-dark);
+            font-family: 'Poppins', sans-serif;
             display: flex;
             flex-direction: column;
+            height: 100vh; /* Set full viewport height */
+            margin: 0;
         }
 
         main {
-            flex: 1;
+            flex: 1; /* Takes up remaining space */
+            padding-top: 80px; /* Space for the sticky navbar */
+            padding-bottom: 50px; /* To ensure no content hides behind the footer */
         }
 
         footer {
+            background-color: #ffffff;
+            border-top: 1px solid var(--kyto-gray);
+            color: var(--kyto-dark);
+            text-align: center;
+            padding: 20px 0;
             position: relative;
             bottom: 0;
             width: 100%;
         }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 2px solid var(--kyto-gray);
+            position: fixed; /* Fix the navbar to the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the navbar stays above content */
+            padding: 10px 0; /* Adjust the padding for better visual */
+        }
+
+        .navbar-brand {
+            color: var(--kyto-primary);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+            .navbar-brand:hover {
+                color: var(--kyto-dark);
+            }
+
+        .nav-link {
+            color: var(--kyto-dark);
+        }
+
+            .nav-link:hover {
+                color: var(--kyto-primary);
+            }
+
+        /* Buttons */
+        .btn-danger {
+            background-color: var(--kyto-primary);
+            border-color: var(--kyto-primary);
+        }
+
+            .btn-danger:hover {
+                background-color: var(--kyto-dark);
+                border-color: var(--kyto-dark);
+            }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Dashboard" asp-action="ReturnDashboard">KYTO</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Dashboard" asp-action="ReturnDashboard">
+                    KYTO
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,15 +103,21 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Earn">Earn</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Earn">
+                                <i class="fas fa-coins"></i> Earn
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Spend">Spend</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Spend">
+                                <i class="fas fa-credit-card"></i> Spend 
+                            </a>
                         </li>
                     </ul>
                     <form asp-controller="Account" asp-action="Logout" method="post">
                         @Html.AntiForgeryToken()
-                        <button type="submit" class="btn btn-danger">Logout</button>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-sign-out-alt"></i> Logout 
+                        </button>
                     </form>
                 </div>
             </div>
@@ -62,7 +131,9 @@
 
     <footer class="border-top footer text-muted mt-auto">
         <div class="container">
-            &copy; 2025 - KYTO - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - KYTO - <a asp-area="" asp-controller="Home" asp-action="Privacy">
+                <i class="fas fa-shield-alt"></i> Privacy <!-- Privacy icon -->
+            </a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

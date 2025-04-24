@@ -1,7 +1,227 @@
-﻿
-@{
-    ViewData["Title"] = "Dashboard";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyto | Find & Offer Part-Time Tasks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fdfc;
+            color: #222;
+        }
 
-<h1>Welcome to KYTO</h1>
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/spend-bg.jpg') center/cover no-repeat;
+            position: relative;
+            color: #fff;
+        }
 
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #e0f7f7;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero .btn {
+            background-color: #00bfa6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.125rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #009f8b;
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 3rem 2rem;
+            background-color: #fff;
+        }
+
+        .feature {
+            flex: 1 1 300px;
+            max-width: 320px;
+            margin: 1rem;
+            padding: 2rem;
+            background: #f0f9f8;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .feature h3 {
+            color: #00796b;
+            margin-bottom: 1rem;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .services {
+            padding: 3rem 2rem;
+            background-color: #e8f7f6;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #00796b;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            justify-items: center;
+        }
+
+        .service-tile {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .service-tile:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-tile img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .service-tile h4 {
+            color: #00796b;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        /* Big Tile for Service Providers */
+        .big-feature {
+            flex: 1 1 500px; /* Increased width */
+            max-width: 600px;
+            margin: 1rem;
+            padding: 2rem;
+            background: #f0f9f8;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .big-feature h3 {
+            color: #00796b;
+            margin-bottom: 1rem;
+        }
+
+        .big-feature .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Earn & Hire Easily with Kyto</h1>
+        <p>Looking to earn some money on the side or get your daily chores done? Kyto connects you with real people for real tasks.</p>
+        <form asp-controller="Dashboard" asp-action="Earn" method="post">
+            @Html.AntiForgeryToken()
+            <button class="btn">Get Started</button>
+        </form>
+    </section>
+
+    <section class="features" id="features">
+        <form asp-controller="Dashboard" asp-action="Spend" method="post" class="feature" style="border: none; background: none; padding: 0;">
+            @Html.AntiForgeryToken()
+            <button type="submit" style="all: unset; display: block; width: 100%;">
+                <div class="feature" style="cursor: pointer;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Post a Task Icon">
+                    <h3>Post a Task</h3>
+                    <p>Need help with cleaning, errands, or pet walking? Post your task and let others help you out.</p>
+                </div>
+            </button>
+        </form>
+        <form asp-controller="Dashboard" asp-action="Earn" method="post" class="feature" style="border: none; background: none; padding: 0;">
+            @Html.AntiForgeryToken()
+            <button type="submit" style="all: unset; display: block; width: 100%;">
+                <div class="feature" style="cursor: pointer;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Find Gigs Icon">
+                    <h3>Find Gigs</h3>
+                    <p>Looking for part-time work? Browse tasks nearby that match your skills and interests.</p>
+                </div>
+            </button>
+        </form>
+
+        <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/929/929426.png" alt="Secure Payments Icon">
+            <h3>Secure Payments</h3>
+            <p>All payments are securely processed through Kyto, ensuring fair and fast transactions.</p>
+        </div>
+
+        <!-- Big Tile for Service Providers -->
+        <div class="big-feature">
+            <h3>Explore Service Providers</h3>
+            <div class="service-grid">
+                <div class="service-tile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Cleaning Icon">
+                    <h4>Cleaning</h4>
+                </div>
+                <div class="service-tile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1261/1261163.png" alt="Repairing Icon">
+                    <h4>Repairing</h4>
+                </div>
+                <div class="service-tile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4086/4086679.png" alt="Grooming Icon">
+                    <h4>Grooming</h4>
+                </div>
+                <div class="service-tile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3448/3448356.png" alt="Tours Icon">
+                    <h4>Tours & Travels</h4>
+                </div>
+                <div class="service-tile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" alt="Cooking Icon">
+                    <h4>Cooking</h4>
+                </div>
+                <div class="service-tile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/201/201818.png" alt="Teaching Icon">
+                    <h4>Teaching / Nanny</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
