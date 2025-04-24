@@ -26,7 +26,7 @@ namespace az_demo_prac.Controllers
             {
                 if (validUser.password == user.password)
                 {
-                    return View("Dashboard","Account");
+                    return View("Dashboard");
                 }
                 else
                 {
@@ -39,12 +39,16 @@ namespace az_demo_prac.Controllers
                 ModelState.AddModelError(string.Empty, "Invalid email");
                 return RedirectToAction("Index", "Home");
             }
-               
         }
 
         public async Task<IActionResult> GetRegisterPage() 
         {
             return View();
+        }
+
+        public async Task<IActionResult> Logout() 
+        {
+            return View("~/Views/Home/Index.cshtml");
         }
 
         public async Task<IActionResult> RegisterUser(User user) 
