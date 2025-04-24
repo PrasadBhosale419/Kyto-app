@@ -9,18 +9,10 @@
 
     <div class="d-flex flex-wrap gap-2">
         <form class="d-flex" method="get" action="@Url.Action("Search", "Dashboard")">
-            <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">Task</button>
-        </form>
-
-        <form class="d-flex" method="get" action="@Url.Action("Search", "Dashboard")">
-            <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">Location</button>
-        </form>
-
-        <form class="d-flex" method="get" action="@Url.Action("Search", "Dashboard")">
-            <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">Price</button>
+            <input class="form-control me-2" type="search" name="query" placeholder="Task" aria-label="Search">
+            <input class="form-control me-2" type="search" name="query" placeholder="Location" aria-label="Search">
+            <input class="form-control me-2" type="search" name="query" placeholder="Price" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
         </form>
     </div>
 </div>
@@ -51,9 +43,7 @@
                     <td>@Html.DisplayFor(modelItem => item.state)</td>
                     <td>@Html.DisplayFor(modelItem => item.country)</td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-primary me-1">Edit</a>
                         <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info me-1">Details</a>
-                        <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                 </tr>
             }

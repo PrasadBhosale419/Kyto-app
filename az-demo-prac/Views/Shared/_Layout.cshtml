@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/az_demo_prac.styles.css" asp-append-version="true" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
@@ -19,21 +18,20 @@
             --kyto-gray: #e0e0e0;
         }
 
-        /* Body and global layout */
         body {
             background-color: var(--kyto-light-bg);
             color: var(--kyto-dark);
             font-family: 'Poppins', sans-serif;
             display: flex;
             flex-direction: column;
-            height: 100vh; /* Set full viewport height */
+            height: 100vh;
             margin: 0;
         }
 
         main {
-            flex: 1; /* Takes up remaining space */
-            padding-top: 80px; /* Space for the sticky navbar */
-            padding-bottom: 50px; /* To ensure no content hides behind the footer */
+            flex: 1;
+            padding-top: 80px;
+            padding-bottom: 50px;
         }
 
         footer {
@@ -47,16 +45,15 @@
             width: 100%;
         }
 
-        /* Navbar */
         .navbar {
             background-color: #ffffff;
             border-bottom: 2px solid var(--kyto-gray);
-            position: fixed; /* Fix the navbar to the top */
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 1000; /* Ensure the navbar stays above content */
-            padding: 10px 0; /* Adjust the padding for better visual */
+            z-index: 1000;
+            padding: 10px 0;
         }
 
         .navbar-brand {
@@ -77,7 +74,6 @@
                 color: var(--kyto-primary);
             }
 
-        /* Buttons */
         .btn-danger {
             background-color: var(--kyto-primary);
             border-color: var(--kyto-primary);
@@ -109,20 +105,46 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Spend">
-                                <i class="fas fa-credit-card"></i> Spend 
+                                <i class="fas fa-credit-card"></i> Spend
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Vendors">
+                                <i class="fa-solid fa-shop"></i> Vendors
                             </a>
                         </li>
                     </ul>
-                    <form asp-controller="Account" asp-action="Logout" method="post">
-                        @Html.AntiForgeryToken()
-                        <button type="submit" class="btn btn-danger">
-                            <i class="fas fa-sign-out-alt"></i> Logout 
-                        </button>
-                    </form>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-lg me-1"></i> Profile
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Account" asp-action="Profile">View Profile</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Account" asp-action="RegisterAsVendor">Be a vendor</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form asp-controller="Account" asp-action="Logout" method="post" class="dropdown-item p-0">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-link dropdown-item">
+                                            <i class="fas fa-sign-out-alt"></i> Logout
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -132,10 +154,11 @@
     <footer class="border-top footer text-muted mt-auto">
         <div class="container">
             &copy; 2025 - KYTO - <a asp-area="" asp-controller="Home" asp-action="Privacy">
-                <i class="fas fa-shield-alt"></i> Privacy <!-- Privacy icon -->
+                <i class="fas fa-shield-alt"></i> Privacy
             </a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
