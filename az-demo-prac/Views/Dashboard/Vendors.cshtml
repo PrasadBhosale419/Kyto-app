@@ -1,0 +1,39 @@
+﻿@model IEnumerable<az_demo_prac.Models.Vendor>
+
+@{
+    ViewData["Title"] = "Vendors";
+}
+
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-3">
+    <h1 class="mb-0">Vendors</h1>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                <th>@Html.DisplayNameFor(model => model.First().UserId)</th>
+                <th>@Html.DisplayNameFor(model => model.First().AddressLine1)</th>
+                <th>@Html.DisplayNameFor(model => model.First().AddressLine2)</th>
+                <th>@Html.DisplayNameFor(model => model.First().City)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Country)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                    <td>@Html.DisplayFor(modelItem => item.UserId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.AddressLine1)</td>
+                    <td>@Html.DisplayFor(modelItem => item.AddressLine2)</td>
+                    <td>@Html.DisplayFor(modelItem => item.City)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Country)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

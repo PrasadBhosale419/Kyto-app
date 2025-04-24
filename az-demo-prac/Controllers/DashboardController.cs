@@ -48,5 +48,11 @@ namespace az_demo_prac.Controllers
             return RedirectToAction("Earn");
         }
 
+        public async Task<IActionResult> Vendors()
+        {
+            var vendors = await dbContext.Vendors.ToListAsync();
+            return View(vendors);
+        }
+
     }
 }

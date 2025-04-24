@@ -8,5 +8,8 @@ namespace az_demo_prac.Models
         public DbSet<User> Users { get; set; }
 
         public DbSet<Earn> Earns { get; set; }
+
+        public DbSet<Vendor> Vendors { get; set; }
+
     }
 }
