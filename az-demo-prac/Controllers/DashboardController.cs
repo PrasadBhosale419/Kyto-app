@@ -54,11 +54,18 @@ namespace az_demo_prac.Controllers
             return View(vendors);
         }
 
-        [HttpGet("GetVendorsByDiscipline/{TaskDiscipline}")]
+        [HttpGet("VendorsByDiscipline/{TaskDiscipline}")]
         public async Task<IActionResult> GetVendorsByDiscipline(Discipline TaskDiscipline)
         {
             var vendorsByDiscipline = await dbContext.Vendors.Where(x=>x.TaskDiscipline == TaskDiscipline).ToListAsync();
             return View(vendorsByDiscipline);
+        }
+
+        [HttpGet("Details/{id}")]
+        public async Task<IActionResult> GetDetails(int id)
+        {
+            var taskDetails = await dbContext.Earns.Where(x=>x.id == id).FirstOrDefaultAsync();
+            return View(taskDetails);
         }
 
     }

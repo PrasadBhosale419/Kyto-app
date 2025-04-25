@@ -1,0 +1,90 @@
+﻿@model az_demo_prac.Models.Earn
+
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<div class="container mt-4">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+        <h2 class="mb-0">Task Details</h2>
+        <a asp-action="Earn" class="btn btn-outline-secondary">Back to List</a>
+    </div>
+
+    <div class="card shadow-sm border-light" style="background-color: #f8f9fa;">
+        <div class="card-body">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div>
+                        <h6 class="text-muted mb-1">
+                            <i class="fas fa-tasks me-2"></i> Task
+                        </h6>
+                        <p class="mb-0 fw-semibold">@Model.taskName</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h6 class="text-muted mb-1">
+                            <i class="fas fa-info-circle me-2"></i> Details
+                        </h6>
+                        <p class="mb-0 fw-semibold">@Model.taskDetails</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <h6 class="text-muted mb-1">
+                            <i class="fas fa-home me-2"></i> Flat No
+                        </h6>
+                        <p class="mb-0 fw-semibold">@Model.flatNo</p>
+                    </div>
+                </div>
+
+                @if (!string.IsNullOrEmpty(Model.addressline1))
+                {
+                    <div class="col-md-6">
+                        <div>
+                            <h6 class="text-muted mb-1">
+                                <i class="fas fa-location-arrow me-2"></i> Address Line 1
+                            </h6>
+                            <p class="mb-0 fw-semibold">@Model.addressline1</p>
+                        </div>
+                    </div>
+                }
+
+                @if (!string.IsNullOrEmpty(Model.addressline2))
+                {
+                    <div class="col-md-6">
+                        <div>
+                            <h6 class="text-muted mb-1">
+                                <i class="fas fa-map-marker-alt me-2"></i> Address Line 2
+                            </h6>
+                            <p class="mb-0 fw-semibold">@Model.addressline2</p>
+                        </div>
+                    </div>
+                }
+
+                <div class="col-md-6">
+                    <div>
+                        <h6 class="text-muted mb-1">
+                            <i class="fas fa-map-signs me-2"></i> State
+                        </h6>
+                        <p class="mb-0 fw-semibold">@Model.state</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <h6 class="text-muted mb-1">
+                            <i class="fas fa-globe me-2"></i> Country
+                        </h6>
+                        <p class="mb-0 fw-semibold text-start">@Model.country</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}
