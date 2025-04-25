@@ -12,7 +12,7 @@
             <a asp-controller="Dashboard" asp-action="ReturnDashboard" class="btn btn-outline-secondary">Back to Dashboard</a>
         </div>
     </div>
-    <hr/>
+    <hr />
 
     <div class="card shadow-sm border-light mb-5" style="background-color: #f8f9fa;">
         <div class="card-body">
@@ -48,7 +48,28 @@
         </div>
     </div>
 
-    <div class="mb-5">
+    <!-- Toggle Buttons -->
+    <div class="mb-4 text-center">
+        <button class="btn btn-outline-primary me-2" onclick="showSection('completed')">Tasks You've Completed</button>
+        <button class="btn btn-outline-primary me-2" onclick="showSection('posted')">Tasks Posted by You</button>
+        <button class="btn btn-outline-primary" onclick="showSection('services')">Your Services / Enterprises</button>
+    </div>
+
+    <!-- Section: Tasks You've Completed (default visible) -->
+    <div id="completed" class="mb-5">
+        <h4 class="mb-3"><i class="fas fa-briefcase me-2 text-success"></i>Tasks You've Completed</h4>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Electrical Fix - ₹1,000</li>
+                    <li class="list-group-item">Painting - ₹2,000</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Tasks Posted by You (default hidden) -->
+    <div id="posted" class="mb-5 d-none">
         <h4 class="mb-3"><i class="fas fa-upload me-2 text-primary"></i>Tasks Posted by You</h4>
         <div class="card shadow-sm">
             <div class="card-body">
@@ -61,19 +82,8 @@
         </div>
     </div>
 
-    <div class="mb-5">
-        <h4 class="mb-3"><i class="fas fa-briefcase me-2 text-success"></i>Tasks You've Completed</h4>
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Electrical Fix - ₹1,000</li>
-                    <li class="list-group-item">Painting - ₹2,000</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="mb-5">
+    <!-- Section: Your Services / Enterprises (default hidden) -->
+    <div id="services" class="mb-5 d-none">
         <h4 class="mb-3"><i class="fas fa-store me-2 text-info"></i>Your Services / Enterprises 🏢</h4>
         <div class="card shadow-sm">
             <div class="card-body">
@@ -88,4 +98,13 @@
 
 @section Scripts {
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function showSection(id) {
+            const sections = ['posted', 'completed', 'services'];
+            sections.forEach(s => {
+                document.getElementById(s).classList.add('d-none');
+            });
+            document.getElementById(id).classList.remove('d-none');
+        }
+    </script>
 }
