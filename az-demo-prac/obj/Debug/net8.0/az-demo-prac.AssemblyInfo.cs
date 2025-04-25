@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("az-demo-prac")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06d3751810a03e37cb41f0cf03b43ce8e7a6fb3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52aae9c1032535594d36937d733ef40d002842d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("az-demo-prac")]
 [assembly: System.Reflection.AssemblyTitleAttribute("az-demo-prac")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

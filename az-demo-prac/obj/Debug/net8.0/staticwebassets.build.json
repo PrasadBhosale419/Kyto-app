@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8I0tbwjkqECdPTQEgKWt9YVWyDn7v0/MHaoiB+55neo=",
+  "Hash": "Yy3NvjxyaMUoraZmNMmebaS7vfod9aaBCwY0XDLXvxc=",
   "Source": "az-demo-prac",
   "BasePath": "_content/az-demo-prac",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\favicon.png",
       "SourceId": "az-demo-prac",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\",
       "BasePath": "_content/az-demo-prac",
-      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -94,11 +94,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "8220gx6zl9",
+      "Integrity": "cF7/3Tnp1G9L9liEBuU6adVAv6IS8r3oUMIwxBKASug=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\favicon1.png",
+      "SourceId": "az-demo-prac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\",
+      "BasePath": "_content/az-demo-prac",
+      "RelativePath": "images/favicon1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ii4u8vvkdp",
+      "Integrity": "WkYdMznIxm0Drlq6Od+Dri05b70NayS/HffQEZotOaY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\favicon1.png"
     },
     {
       "Identity": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\kyto-bg.jpg",
@@ -1609,8 +1630,8 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\favicon.ico",
+      "Route": "favicon.8220gx6zl9.png",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1619,19 +1640,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "16893"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"cF7/3Tnp1G9L9liEBuU6adVAv6IS8r3oUMIwxBKASug=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 20:28:38 GMT"
+          "Value": "Fri, 25 Apr 2025 10:46:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1641,21 +1662,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "8220gx6zl9"
         },
         {
           "Name": "label",
-          "Value": "favicon.ico"
+          "Value": "favicon.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-cF7/3Tnp1G9L9liEBuU6adVAv6IS8r3oUMIwxBKASug="
         }
       ]
     },
     {
-      "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\favicon.ico",
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1664,19 +1685,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "16893"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"cF7/3Tnp1G9L9liEBuU6adVAv6IS8r3oUMIwxBKASug=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 20:28:38 GMT"
+          "Value": "Fri, 25 Apr 2025 10:46:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1686,7 +1707,89 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-cF7/3Tnp1G9L9liEBuU6adVAv6IS8r3oUMIwxBKASug="
+        }
+      ]
+    },
+    {
+      "Route": "images/favicon1.ii4u8vvkdp.png",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\favicon1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WkYdMznIxm0Drlq6Od+Dri05b70NayS/HffQEZotOaY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:06:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ii4u8vvkdp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/favicon1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WkYdMznIxm0Drlq6Od+Dri05b70NayS/HffQEZotOaY="
+        }
+      ]
+    },
+    {
+      "Route": "images/favicon1.png",
+      "AssetFile": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\wwwroot\\images\\favicon1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WkYdMznIxm0Drlq6Od+Dri05b70NayS/HffQEZotOaY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:06:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WkYdMznIxm0Drlq6Od+Dri05b70NayS/HffQEZotOaY="
         }
       ]
     },

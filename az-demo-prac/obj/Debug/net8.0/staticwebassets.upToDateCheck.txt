@@ -1,5 +1,6 @@
 wwwroot\css\site.css
-wwwroot\favicon.ico
+wwwroot\favicon.png
+wwwroot\images\favicon1.png
 wwwroot\images\kyto-bg.jpg
 wwwroot\images\spend-bg.jpg
 wwwroot\js\site.js
