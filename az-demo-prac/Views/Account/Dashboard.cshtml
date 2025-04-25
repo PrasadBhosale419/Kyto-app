@@ -87,18 +87,18 @@
 
             .feature h3, .big-feature h3 {
                 color: #00796b;
-                margin-bottom: 0.2rem; /* Reduced gap between h3 and p */
+                margin-bottom: 0.2rem;
             }
 
             .feature p {
-                margin-top: 0; /* Removed top margin from p */
-                margin-bottom: 0.25rem; /* Reduced gap between p and the bottom */
+                margin-top: 0; 
+                margin-bottom: 0.25rem;
             }
 
             .feature img, .big-feature img {
-                width: 120px; /* Increased size of icons */
-                height: 120px; /* Increased size of icons */
-                margin: 0 auto 0.5rem auto; /* Reduced gap between icon and h3 */
+                width: 120px; 
+                height: 120px;
+                margin: 0 auto 0.5rem auto;
                 display: block;
             }
 
@@ -150,7 +150,7 @@
     <section class="hero">
         <h1>Earn & Hire Easily with Kyto</h1>
         <p>Looking to earn some money on the side or get your daily chores done? Kyto connects you with real people for real tasks.</p>
-        <form asp-controller="Dashboard" asp-action="Earn" method="post">
+        <form asp-controller="Dashboard" asp-action="Earn" method="get">
             @Html.AntiForgeryToken()
             <button class="btn">Get Started</button>
         </form>

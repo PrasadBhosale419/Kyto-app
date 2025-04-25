@@ -19,9 +19,11 @@ namespace az_demo_prac.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        
         public async Task<IActionResult> Login(User user)
         {
             var validUser = await dbContext.Users.Where(x => x.email == user.email).FirstOrDefaultAsync();
+            HttpContext.Session.SetString("UserId", validUser.id.ToString());
             if (validUser != null)
             {
                 if (validUser.password == user.password)
