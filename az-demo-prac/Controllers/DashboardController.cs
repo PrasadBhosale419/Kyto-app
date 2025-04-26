@@ -21,7 +21,8 @@ namespace az_demo_prac.Controllers
 
         public async Task<IActionResult> Earn()
         {
-            var work = await dbContext.Earns.ToListAsync();
+            var userId = int.Parse(HttpContext.Session.GetString("UserId"));
+            var work = await dbContext.Earns.Where(x=>x.Completedby==0 && x.UserId!=userId).ToListAsync();
             return View(work);
         }
 
@@ -61,21 +62,6 @@ namespace az_demo_prac.Controllers
         {
             var vendorsByDiscipline = await dbContext.Vendors.Where(x=>x.TaskDiscipline == TaskDiscipline).ToListAsync();
             return View(vendorsByDiscipline);
-        }
-
-        [HttpGet("Details/{id}")]
-        public async Task<IActionResult> GetDetails(int id)
-        {
-            var taskDetails = await dbContext.Earns.Where(x=>x.Id == id).FirstOrDefaultAsync();
-            var postedby = await dbContext.Users.FirstOrDefaultAsync(x=>x.Id == taskDetails.UserId);
-            var details = new TaskDetailsViewModel 
-            {
-                EarnTask = taskDetails,
-                Postedby = postedby.FirstName +" "+ postedby.LastName,
-                Phone = postedby.Phone,
-                Email = postedby.Email ,
-            };
-            return View(details);
         }
 
     }

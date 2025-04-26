@@ -13,5 +13,7 @@
         public double Phone { get; set; }
 
         public string Password { get; set; }
+
+        public int AssignedTask { get; set; }
     }
 }

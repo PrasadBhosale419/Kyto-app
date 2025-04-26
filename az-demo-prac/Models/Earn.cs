@@ -16,6 +16,10 @@
 
         public string? Addressline2 { get; set; }
 
+        public TaskStatus TaskStatus { get; set; }
+
+        public int Completedby { get; set; }
+
         public double Price { get; set; }
 
         public string City { get; set; }
@@ -23,5 +27,13 @@
         public string State { get; set; }
 
         public string Country { get; set; }
+    }
+
+    public enum TaskStatus
+    {
+        None=0,
+        Unaccepted,
+        Accepted,
+        Completed
     }
 }

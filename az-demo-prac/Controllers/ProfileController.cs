@@ -16,8 +16,54 @@ namespace az_demo_prac.Controllers
         public async Task<IActionResult> GetProfile()
         {
             var userId = int.Parse(HttpContext.Session.GetString("UserId"));
-            var user = await dbContext.Users.Where(x=>x.Id == userId).FirstOrDefaultAsync();
-            return View(user);
+
+            var user = await dbContext.Users.FindAsync(userId);
+            var taskCount = await dbContext.Earns.CountAsync(e => e.Completedby == userId);
+            var moneyEarned = await dbContext.Earns
+                                .Where(e => e.Completedby == userId)
+                                .SumAsync(e => (decimal?)e.Price) ?? 0;
+
+            var completedTasks = await dbContext.Earns
+                                .Where(e => e.Completedby == userId)
+                                .Select(e => new CompletedTaskDto
+                                {
+                                    TaskName = e.TaskName,
+                                    Price = (decimal)e.Price
+                                })
+                                .ToListAsync();
+
+            var postedTasks = await dbContext.Earns
+                .Where(t => t.UserId == userId && t.Completedby==0)
+                .Select(t => new PostedTaskDto
+                {
+                    Id = t.Id,
+                    TaskName = t.TaskName,
+                    Price = (decimal)t.Price,
+                    TaskStatus = t.TaskStatus
+                })
+                .ToListAsync();
+
+            var userServices = await dbContext.Vendors
+                .Where(s => s.UserId == userId)
+                .Select(s => new UserServiceDto
+                {
+                    Id = s.Id,
+                    Name = s.Name
+                })
+                .ToListAsync();
+
+
+            var viewModel = new ProfileViewModel
+            {
+                User = user,
+                TaskCount = taskCount,
+                MoneyEarned = moneyEarned,
+                CompletedTasks = completedTasks,
+                PostedTasks = postedTasks,
+                UserServices = userServices
+            };
+
+            return View(viewModel);
         }
 
         public async Task<IActionResult> GetRegisterVendorsPage()
@@ -42,36 +88,6 @@ namespace az_demo_prac.Controllers
             await dbContext.SaveChangesAsync();
             return RedirectToAction("Vendors", "Dashboard");
         }
-
-        public async Task<IActionResult> UserProfile()
-        {
-            var userId = int.Parse(HttpContext.Session.GetString("UserId"));
-
-            var user = await dbContext.Users.FindAsync(userId);
-            var taskCount = await GetTaskCount(userId);
-            //var moneyEarned = await GetMoneyEarned(userId);
-
-            var viewModel = new ProfileViewModel
-            {
-                User = user,
-                TaskCount = taskCount,
-                //MoneyEarned = moneyEarned
-            };
-
-            return View(viewModel);
-        }
-
-        public async Task<int> GetTaskCount(int userId)
-        {
-            return await dbContext.Earns.Where(t => t.UserId == userId).CountAsync();
-        }
-
-        //public async Task<decimal> GetMoneyEarned(int userId)
-        //{
-        //    return await dbContext.Earns
-        //                 .Where(t => t.userId == userId)
-        //                 .SumAsync(t => t.PaymentAmount);
-        //}
-
+            
     }
 }
