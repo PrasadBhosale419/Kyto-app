@@ -1,22 +1,21 @@
 ﻿@model az_demo_prac.Models.Earn
 
 @{
-    ViewData["Title"] = "Create Task";
+    ViewData["Title"] = "Edit Task";
 }
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 <div class="container mt-4">
     <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
-        <h2 class="mb-0"><i class="fa-solid fa-broom"></i> Add New Task</h2>
+        <h2 class="mb-0">Edit Task</h2>
         <a asp-controller="Dashboard" asp-action="ReturnDashboard" class="btn btn-outline-secondary">Back to Dashboard</a>
     </div>
     <hr />
 
     <div class="card shadow-sm border-light mb-5" style="background-color: #f8f9fa;">
         <div class="card-body">
-            <form asp-action="AddTask">
+            <form asp-action="GetEditTaskPage">
                 <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Id" />
 
                 <div class="row g-4">
                     <div class="col-md-6">
@@ -24,14 +23,6 @@
                             <label asp-for="TaskName" class="form-label fw-semibold">Task Name</label>
                             <input asp-for="TaskName" class="form-control" />
                             <span asp-validation-for="TaskName" class="text-danger small"></span>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="Price" class="form-label fw-semibold">Price (₹)</label>
-                            <input asp-for="Price" class="form-control" />
-                            <span asp-validation-for="Price" class="text-danger small"></span>
                         </div>
                     </div>
 
@@ -45,7 +36,7 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="FlatNo" class="form-label fw-semibold">Flat No / Floor / Wing</label>
+                            <label asp-for="FlatNo" class="form-label fw-semibold">Flat No</label>
                             <input asp-for="FlatNo" class="form-control" />
                             <span asp-validation-for="FlatNo" class="text-danger small"></span>
                         </div>
@@ -64,6 +55,35 @@
                             <label asp-for="Addressline2" class="form-label fw-semibold">Address Line 2</label>
                             <input asp-for="Addressline2" class="form-control" />
                             <span asp-validation-for="Addressline2" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="TaskStatus" class="form-label fw-semibold">Task Status</label>
+                            <select asp-for="TaskStatus" class="form-select">
+                                <option value="">-- Select Status --</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Completed">Completed</option>
+                                <option value="InProgress">In Progress</option>
+                            </select>
+                            <span asp-validation-for="TaskStatus" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Completedby" class="form-label fw-semibold">Completed By</label>
+                            <input asp-for="Completedby" class="form-control" />
+                            <span asp-validation-for="Completedby" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Price" class="form-label fw-semibold">Price (₹)</label>
+                            <input asp-for="Price" class="form-control" />
+                            <span asp-validation-for="Price" class="text-danger small"></span>
                         </div>
                     </div>
 
@@ -94,11 +114,9 @@
 
                 <div class="d-flex justify-content-end gap-2 mt-4">
                     <button type="submit" class="btn" style="background-color: #00b6b3; color: white;">
-                        <i class="fa-solid fa-plus me-1"></i> Create
+                        <i class="fas fa-save me-1"></i> Save Changes
                     </button>
-                    <a asp-controller="Dashboard" asp-action="ReturnDashboard" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-xmark me-1"></i> Cancel
-                    </a>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
                 </div>
             </form>
         </div>

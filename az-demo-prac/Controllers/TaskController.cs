@@ -67,5 +67,12 @@ namespace az_demo_prac.Controllers
 
             return RedirectToAction("GetProfile","Profile");
         }
+
+        [HttpGet("EditTask/{Id}")]
+        public async Task<IActionResult> GetEditTaskPage(int Id) 
+        {
+            var task = await dbContext.Earns.FirstOrDefaultAsync(x=>x.Id == Id);
+            return View(task);
+        }
     }
 }

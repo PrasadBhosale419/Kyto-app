@@ -6,175 +6,81 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-<style>
-    :root {
-        --kyto-primary: #00b6b3;
-        --kyto-dark: #1a2b49;
-        --kyto-light-bg: #f9fafa;
-        --kyto-gray: #e0e0e0;
-    }
-
-    body {
-        background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('/images/spend-bg.jpg');
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        font-family: 'Segoe UI', sans-serif;
-    }
-
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .form-container {
-        background-color: white;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        border: 1px solid var(--kyto-gray);
-    }
-
-    h3 {
-        color: var(--kyto-dark);
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    label {
-        font-weight: 500;
-        color: var(--kyto-dark);
-    }
-
-    .form-control {
-        border-radius: 8px;
-        border: 1px solid #d0d7de;
-        padding: 12px;
-        margin-bottom: 15px;
-        transition: all 0.3s ease;
-    }
-
-        .form-control:focus {
-            border-color: var(--kyto-primary);
-            box-shadow: 0 0 8px rgba(0, 182, 179, 0.5);
-        }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .btn-primary, .btn-cancel {
-        border-radius: 8px;
-        padding: 12px 20px;
-        font-weight: 600;
-        width: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px auto;
-        transition: all 0.3s ease;
-    }
-
-    .btn-primary {
-        background-color: var(--kyto-primary);
-        border-color: var(--kyto-primary);
-        color: white;
-    }
-
-        .btn-primary:hover {
-            background-color: #009e8a;
-            border-color: #009e8a;
-            transform: translateY(-2px);
-        }
-
-    .btn-cancel {
-        background-color: #e0e0e0;
-        border-color: #d0d7de;
-        color: var(--kyto-dark);
-    }
-
-        .btn-cancel:hover {
-            background-color: #c0c0c0;
-            border-color: #b0b0b0;
-            transform: translateY(-2px);
-        }
-
-        .btn-primary i, .btn-cancel i {
-            margin-right: 8px;
-        }
-
-    .row {
-        margin-bottom: 20px;
-    }
-
-        .row .col-md-6 {
-            margin-bottom: 20px;
-        }
-
-    .text-danger {
-        font-size: 0.875rem;
-    }
-</style>
-
-<div class="container mt-4 position-relative">
-    <h3><i class="fa-solid fa-store"></i> Register as a Vendor</h3>
+<div class="container mt-4">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+        <h2 class="mb-0"><i class="fa-solid fa-store"></i> Register as Vendor</h2>
+        <a asp-controller="Dashboard" asp-action="ReturnDashboard" class="btn btn-outline-secondary">Back to Dashboard</a>
+    </div>
     <hr />
-    <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6 form-container">
+
+    <div class="card shadow-sm border-light mb-5" style="background-color: #f8f9fa;">
+        <div class="card-body">
             <form asp-action="RegisterAsVendor" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <label asp-for="Name">Enterprise Name</label>
-                        <input asp-for="Name" class="form-control" />
-                        <span asp-validation-for="Name" class="text-danger">Vendor Name is required</span>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Name" class="form-label fw-semibold">Enterprise Name</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger small"></span>
+                        </div>
                     </div>
 
-                    <div class="col-md-6 form-group">
-                        <label asp-for="Description">Description</label>
-                        <input asp-for="Description" class="form-control" />
-                        <span asp-validation-for="Description" class="text-danger">Description is required</span>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Description" class="form-label fw-semibold">Description</label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="AddressLine1" class="form-label fw-semibold">Address Line 1</label>
+                            <input asp-for="AddressLine1" class="form-control" />
+                            <span asp-validation-for="AddressLine1" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="AddressLine2" class="form-label fw-semibold">Address Line 2</label>
+                            <input asp-for="AddressLine2" class="form-control" />
+                            <span asp-validation-for="AddressLine2" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="City" class="form-label fw-semibold">City</label>
+                            <input asp-for="City" class="form-control" />
+                            <span asp-validation-for="City" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Country" class="form-label fw-semibold">Country</label>
+                            <input asp-for="Country" class="form-control" />
+                            <span asp-validation-for="Country" class="text-danger small"></span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <label asp-for="AddressLine1">Address Line 1</label>
-                        <input asp-for="AddressLine1" class="form-control" />
-                        <span asp-validation-for="AddressLine1" class="text-danger">Address Line 1 is required</span>
-                    </div>
-
-                    <div class="col-md-6 form-group">
-                        <label asp-for="AddressLine2">Address Line 2</label>
-                        <input asp-for="AddressLine2" class="form-control" />
-                        <span asp-validation-for="AddressLine2" class="text-danger">Address Line 2 is required</span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <label asp-for="City">City</label>
-                        <input asp-for="City" class="form-control" />
-                        <span asp-validation-for="City" class="text-danger">City is required</span>
-                    </div>
-
-                    <div class="col-md-6 form-group">
-                        <label asp-for="Country">Country</label>
-                        <input asp-for="Country" class="form-control" />
-                        <span asp-validation-for="Country" class="text-danger">Country is required</span>
-                    </div>
-                </div>
-
-                <div class="form-group d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary btn-sm">
-                        <i class="fa-solid fa-plus"></i> Register
+                <div class="d-flex justify-content-end gap-2 mt-4">
+                    <button type="submit" class="btn" style="background-color: #00b6b3; color: white;">
+                        <i class="fa-solid fa-plus me-1"></i> Register
                     </button>
-                    <a asp-controller="Dashboard" asp-action="ReturnDashboard" class="btn btn-cancel btn-sm">
-                        <i class="fa-solid fa-xmark"></i> Cancel
+                    <a asp-controller="Dashboard" asp-action="ReturnDashboard" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-xmark me-1"></i> Cancel
                     </a>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}
