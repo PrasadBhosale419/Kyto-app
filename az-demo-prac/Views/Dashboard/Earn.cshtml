@@ -22,12 +22,8 @@
         <thead class="table-light">
             <tr>
                 <th>Task</th>
-                <th>Details</th>
-                <th>FlatNo/Floor/Wing</th>
-                <th>Addressline1</th>
-                <th>Addressline2</th>
-                <th>State</th>
-                <th>Country</th>
+                <th>Address</th>
+                <th>Price(Rs/-)</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -35,15 +31,11 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@Html.DisplayFor(modelItem => item.taskName)</td>
-                    <td>@Html.DisplayFor(modelItem => item.taskDetails)</td>
-                    <td>@Html.DisplayFor(modelItem => item.flatNo)</td>
-                    <td>@Html.DisplayFor(modelItem => item.addressline1)</td>
-                    <td>@Html.DisplayFor(modelItem => item.addressline2)</td>
-                    <td>@Html.DisplayFor(modelItem => item.state)</td>
-                    <td>@Html.DisplayFor(modelItem => item.country)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TaskName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FlatNo), @Html.DisplayFor(modelItem => item.Addressline1) @Html.DisplayFor(modelItem => item.Addressline2)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Price)</td>
                     <td>
-                        <a asp-action="GetDetails" asp-route-id="@item.id" class="btn btn-sm btn-info me-1">Details</a>
+                        <a asp-action="GetDetails" asp-route-id="@item.Id" class="btn btn-sm btn-info me-1">Details</a>
                     </td>
                 </tr>
             }

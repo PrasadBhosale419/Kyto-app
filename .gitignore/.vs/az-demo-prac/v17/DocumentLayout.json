@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\profile\\getprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\profile\\getprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\dashboard\\getdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\dashboard\\getdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\profile\\getprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\profile\\getprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\dashboard\\earn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\dashboard\\earn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\account\\getregisterpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\account\\getregisterpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\models\\taskdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\models\\taskdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\profile\\getregistervendorspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\profile\\getregistervendorspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\models\\earn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\models\\earn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\dashboard\\spend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\dashboard\\spend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|c:\\users\\hp\\onedrive\\documents\\prasadbhosale419\\kyto-app\\az-demo-prac\\views\\dashboard\\vendors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB468667-6659-439E-AB6C-6F07152B946F}|az-demo-prac\\az-demo-prac.csproj|solutionrelative:az-demo-prac\\views\\dashboard\\vendors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +62,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Spend.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
-              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
-              "RelativeToolTip": "az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T18:51:22.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
-              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
-              "RelativeToolTip": "az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T18:43:46.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "GetProfile.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Profile\\GetProfile.cshtml",
               "RelativeDocumentMoniker": "az-demo-prac\\Views\\Profile\\GetProfile.cshtml",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Profile\\GetProfile.cshtml",
               "RelativeToolTip": "az-demo-prac\\Views\\Profile\\GetProfile.cshtml",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAiwG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T18:42:43.119Z",
+              "WhenOpened": "2025-04-25T19:18:15.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "az-demo-prac\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "az-demo-prac\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:26:18.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\TaskDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "az-demo-prac\\Models\\TaskDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\TaskDetailsViewModel.cs",
+              "RelativeToolTip": "az-demo-prac\\Models\\TaskDetailsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:56:34.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\User.cs",
+              "RelativeDocumentMoniker": "az-demo-prac\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\User.cs",
+              "RelativeToolTip": "az-demo-prac\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:39:53.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetRegisterPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Account\\GetRegisterPage.cshtml",
+              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Account\\GetRegisterPage.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Account\\GetRegisterPage.cshtml",
+              "RelativeToolTip": "az-demo-prac\\Views\\Account\\GetRegisterPage.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T12:07:47.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
+              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
+              "RelativeToolTip": "az-demo-prac\\Views\\Dashboard\\GetDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T12:23:40.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Vendors.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Vendors.cshtml",
+              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Dashboard\\Vendors.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Vendors.cshtml",
+              "RelativeToolTip": "az-demo-prac\\Views\\Dashboard\\Vendors.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:49:09.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Spend.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
+              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
+              "RelativeToolTip": "az-demo-prac\\Views\\Dashboard\\Spend.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAiwLkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T11:40:10.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Earn.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Earn.cshtml",
+              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Dashboard\\Earn.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Dashboard\\Earn.cshtml",
+              "RelativeToolTip": "az-demo-prac\\Views\\Dashboard\\Earn.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T11:20:24.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "az-demo-prac\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "az-demo-prac\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwEkAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:20:14.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetRegisterVendorsPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Profile\\GetRegisterVendorsPage.cshtml",
+              "RelativeDocumentMoniker": "az-demo-prac\\Views\\Profile\\GetRegisterVendorsPage.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Views\\Profile\\GetRegisterVendorsPage.cshtml",
+              "RelativeToolTip": "az-demo-prac\\Views\\Profile\\GetRegisterVendorsPage.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:49:39.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Earn.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\Earn.cs",
+              "RelativeDocumentMoniker": "az-demo-prac\\Models\\Earn.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\Earn.cs",
+              "RelativeToolTip": "az-demo-prac\\Models\\Earn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:05:17.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "az-demo-prac\\Models\\ProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\PrasadBhosale419\\Kyto-app\\az-demo-prac\\Models\\ProfileViewModel.cs",
+              "RelativeToolTip": "az-demo-prac\\Models\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:24:27.889Z",
               "EditorCaption": ""
             }
           ]

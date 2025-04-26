@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\az-demo-prac.8n12r04jhp.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8n12r04jhp"},{"Name":"integrity","Value":"sha256-LJA6\u002BJRyZ9vxEXvrCGNz3FStUr7Vpjp5jS9UXmL4AR0="},{"Name":"label","Value":"_content/az-demo-prac/az-demo-prac.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LJA6\u002BJRyZ9vxEXvrCGNz3FStUr7Vpjp5jS9UXmL4AR0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 17:50:51 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LJA6\u002BJRyZ9vxEXvrCGNz3FStUr7Vpjp5jS9UXmL4AR0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 10:45:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/az-demo-prac/az-demo-prac.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\az-demo-prac.8n12r04jhp.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LJA6\u002BJRyZ9vxEXvrCGNz3FStUr7Vpjp5jS9UXmL4AR0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LJA6\u002BJRyZ9vxEXvrCGNz3FStUr7Vpjp5jS9UXmL4AR0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 17:50:51 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LJA6\u002BJRyZ9vxEXvrCGNz3FStUr7Vpjp5jS9UXmL4AR0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 10:45:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/az-demo-prac/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

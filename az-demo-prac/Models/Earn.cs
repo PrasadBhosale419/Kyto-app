@@ -2,22 +2,26 @@
 {
     public class Earn
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        public string taskName { get; set; }
+        public string TaskName { get; set; }
 
-        public int userId { get; set; }
+        public int UserId { get; set; }
 
-        public string taskDetails { get; set; }
+        public string TaskDetails { get; set; }
 
-        public string flatNo { get; set; }
+        public string FlatNo { get; set; }
 
-        public string addressline1 { get; set; }
+        public string Addressline1 { get; set; }
 
-        public string? addressline2 { get; set; }
+        public string? Addressline2 { get; set; }
 
-        public string state { get; set; }
+        public double Price { get; set; }
 
-        public string country { get; set; }
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        public string Country { get; set; }
     }
 }

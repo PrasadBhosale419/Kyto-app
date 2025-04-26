@@ -34,14 +34,16 @@ namespace az_demo_prac.Controllers
         {
             var newTask = new Earn
             {
-                taskName = earn.taskName,
-                userId = earn.userId,
-                taskDetails = earn.taskDetails,
-                flatNo = earn.flatNo,
-                addressline1 = earn.addressline1,
-                addressline2 = earn.addressline2,
-                state = earn.state,
-                country = earn.country
+                TaskName = earn.TaskName,
+                UserId = int.Parse(HttpContext.Session.GetString("UserId")),
+                Price = earn.Price,
+                TaskDetails = earn.TaskDetails,
+                FlatNo = earn.FlatNo,
+                Addressline1 = earn.Addressline1,
+                Addressline2 = earn.Addressline2,
+                City = earn.City,
+                State = earn.State,
+                Country = "India"
             };
             await dbContext.Earns.AddAsync(newTask);
             await dbContext.SaveChangesAsync();
@@ -64,8 +66,16 @@ namespace az_demo_prac.Controllers
         [HttpGet("Details/{id}")]
         public async Task<IActionResult> GetDetails(int id)
         {
-            var taskDetails = await dbContext.Earns.Where(x=>x.id == id).FirstOrDefaultAsync();
-            return View(taskDetails);
+            var taskDetails = await dbContext.Earns.Where(x=>x.Id == id).FirstOrDefaultAsync();
+            var postedby = await dbContext.Users.FirstOrDefaultAsync(x=>x.Id == taskDetails.UserId);
+            var details = new TaskDetailsViewModel 
+            {
+                EarnTask = taskDetails,
+                Postedby = postedby.FirstName +" "+ postedby.LastName,
+                Phone = postedby.Phone,
+                Email = postedby.Email ,
+            };
+            return View(details);
         }
 
     }

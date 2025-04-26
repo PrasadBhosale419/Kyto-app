@@ -22,11 +22,11 @@ namespace az_demo_prac.Controllers
         
         public async Task<IActionResult> Login(User user)
         {
-            var validUser = await dbContext.Users.Where(x => x.email == user.email).FirstOrDefaultAsync();
-            HttpContext.Session.SetString("UserId", validUser.id.ToString());
+            var validUser = await dbContext.Users.Where(x => x.Email == user.Email).FirstOrDefaultAsync();
+            HttpContext.Session.SetString("UserId", validUser.Id.ToString());
             if (validUser != null)
             {
-                if (validUser.password == user.password)
+                if (validUser.Password == user.Password)
                 {
                     return View("Dashboard");
                 }
@@ -57,10 +57,10 @@ namespace az_demo_prac.Controllers
         {
             var newUser = new User
             {
-                firstName = user.firstName,
-                lastName = user.lastName,
-                email = user.email,
-                password = user.password
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                Password = user.Password
             };
 
             await dbContext.Users.AddAsync(newUser);

@@ -1,83 +1,91 @@
-﻿@model az_demo_prac.Models.Earn
+﻿@model az_demo_prac.Models.TaskDetailsViewModel
 
 @{
     ViewData["Title"] = "Task Details";
 }
 
-<div class="container mt-4">
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
-        <h2 class="mb-0">Task Details</h2>
-        <a asp-action="Earn" class="btn btn-outline-secondary">Back to List</a>
+<div class="container mt-5">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h2 class="fw-bold mb-0" style="color: #00b6b3;">Task Details</h2>
+        <a asp-action="Earn" class="btn btn-outline-secondary rounded-pill px-4">Back to List</a>
     </div>
 
-    <div class="card shadow-sm border-light" style="background-color: #f8f9fa;">
-        <div class="card-body">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div>
-                        <h6 class="text-muted mb-1">
-                            <i class="fas fa-tasks me-2"></i> Task
-                        </h6>
-                        <p class="mb-0 fw-semibold">@Model.taskName</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <h6 class="text-muted mb-1">
-                            <i class="fas fa-info-circle me-2"></i> Details
-                        </h6>
-                        <p class="mb-0 fw-semibold">@Model.taskDetails</p>
-                    </div>
-                </div>
+    <div class="row g-4">
+        <!-- Task Details Card -->
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0" style="background: #f9f9f9; border-radius: 15px;">
+                <div class="card-body p-4">
+                    <h4 class="mb-3 text-secondary">
+                        <i class="fas fa-tasks me-2"></i> Task Information
+                    </h4>
+                    <hr class="text-secondary" />
 
-                <div class="col-md-6">
-                    <div>
-                        <h6 class="text-muted mb-1">
-                            <i class="fas fa-home me-2"></i> Flat No
-                        </h6>
-                        <p class="mb-0 fw-semibold">@Model.flatNo</p>
-                    </div>
-                </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="text-muted">Task</label>
+                            <p class="fw-semibold">@Model.EarnTask.TaskName</p>
+                        </div>
 
-                @if (!string.IsNullOrEmpty(Model.addressline1))
-                {
-                    <div class="col-md-6">
-                        <div>
-                            <h6 class="text-muted mb-1">
-                                <i class="fas fa-location-arrow me-2"></i> Address Line 1
-                            </h6>
-                            <p class="mb-0 fw-semibold">@Model.addressline1</p>
+                        <div class="col-md-6">
+                            <label class="text-muted">Price</label>
+                            <p class="fw-semibold">@Model.EarnTask.Price</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="text-muted">Details</label>
+                            <p class="fw-semibold">@Model.EarnTask.TaskDetails</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="text-muted">Flat No</label>
+                            <p class="fw-semibold">@Model.EarnTask.FlatNo</p>
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(Model.EarnTask.Addressline1))
+                        {
+                            <div class="col-md-6">
+                                <label class="text-muted">Address Line 1</label>
+                                <p class="fw-semibold">@Model.EarnTask.Addressline1</p>
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.EarnTask.Addressline2))
+                        {
+                            <div class="col-md-6">
+                                <label class="text-muted">Address Line 2</label>
+                                <p class="fw-semibold">@Model.EarnTask.Addressline2</p>
+                            </div>
+                        }
+
+                        <div class="col-md-6">
+                            <label class="text-muted">State</label>
+                            <p class="fw-semibold">@Model.EarnTask.State</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="text-muted">Country</label>
+                            <p class="fw-semibold">@Model.EarnTask.Country</p>
                         </div>
                     </div>
-                }
-
-                @if (!string.IsNullOrEmpty(Model.addressline2))
-                {
-                    <div class="col-md-6">
-                        <div>
-                            <h6 class="text-muted mb-1">
-                                <i class="fas fa-map-marker-alt me-2"></i> Address Line 2
-                            </h6>
-                            <p class="mb-0 fw-semibold">@Model.addressline2</p>
-                        </div>
-                    </div>
-                }
-
-                <div class="col-md-6">
-                    <div>
-                        <h6 class="text-muted mb-1">
-                            <i class="fas fa-map-signs me-2"></i> State
-                        </h6>
-                        <p class="mb-0 fw-semibold">@Model.state</p>
-                    </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-md-6">
-                    <div>
-                        <h6 class="text-muted mb-1">
-                            <i class="fas fa-globe me-2"></i> Country
-                        </h6>
-                        <p class="mb-0 fw-semibold text-start">@Model.country</p>
+        <!-- User Details Card -->
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0" style="background: #ffffff; border-radius: 15px;">
+                <div class="card-body text-center p-4">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle shadow-sm mb-3" alt="User Profile" />
+                    <h5 class="fw-bold mb-1 text-dark">@Model.Postedby</h5>
+                    <span class="badge rounded-pill bg-secondary text-white">Task Poster</span>
+
+                    <div class="text-start mt-4">
+                        <p class="mb-2">
+                            <i class="fas fa-phone-alt me-2 text-secondary"></i> <span class="fw-semibold">@Model.Phone</span>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-envelope me-2 text-secondary"></i> <span class="fw-semibold">@Model.Email</span>
+                        </p>
                     </div>
                 </div>
             </div>
