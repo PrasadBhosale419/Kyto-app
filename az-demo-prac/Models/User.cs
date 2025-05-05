@@ -15,5 +15,7 @@
         public string Password { get; set; }
 
         public int AssignedTask { get; set; }
+
+        public bool IsDeprecated { get; set; } 
     }
 }

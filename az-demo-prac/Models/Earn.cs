@@ -27,6 +27,8 @@
         public string State { get; set; }
 
         public string Country { get; set; }
+
+        public bool IsDeprecated { get; set; }
     }
 
     public enum TaskStatus
